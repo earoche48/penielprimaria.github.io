@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Examen</title>
+</head>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #3374ff;
+}
+
+
+
+
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+button[type="submit"], button[type="button"] {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover, button[type="button"]:hover {
+    background-color: #0056b3;
+}
+
+
+
+/* Estilos para el contador */
+#countdown {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #FFB600;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+img {
+    height: 64px;
+    width: 64px;
+    vertical-align: middle;
+}
+
+</style>
+<style>
+    /* Estilos adicionales */
+@media screen and (max-width: 600px) {
+    /* Agregamos estilos específicos para pantallas pequeñas */
+    form {
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 15px;
+        color: #fff;
+    }
+
+    h2 {
+        font-size: 12px;
+        color: #fff;
+    }
+
+    h1 img {
+        height: 18px;
+        width: 18px;
+    }
+
+    div.question {
+        margin-bottom: 10px;
+    }
+
+    label {
+        font-size: 12px;
+    }
+
+    button[type="submit"], button[type="button"] {
+        margin: 10px auto;
+        padding: 8px 16px;
+    }
+}
+</style>
+<body>
+  <h1><img src="Logo.png" alt="Logo"> Colegio Cristiano Peniel</h1>
+    <form id="exam-form">
+        <!-- Agrega aquí las preguntas y opciones del examen -->
+        <form id="exam-form">
+          <!-- Pregunta 1 -->
+    <p>1. ¿Qué es una macro en Excel?</p>
+    <div class="option">
+      <input type="radio" name="q1" value="a">a) Una hoja de cálculo<br>
+      <input type="radio" name="q1" value="b">b) Un archivo de texto<br>
+      <input type="radio" name="q1" value="c">c) Un conjunto de comandos automatizados<br>
+      <input type="radio" name="q1" value="d">d) Una imagen gráfica<br>
+    </div>
+
+    <!-- Pregunta 2 -->
+    <p>2. ¿Cuál de las siguientes funciones de Excel redondea un número al entero más cercano?</p>
+    <div class="option">
+      <input type="radio" name="q2" value="a">a) REDONDEAR<br>
+      <input type="radio" name="q2" value="b">b) REDONDEAR.MENOS<br>
+      <input type="radio" name="q2" value="c">c) REDONDEAR.MAS<br>
+      <input type="radio" name="q2" value="d">d) REDONDEAR.SIMPLE<br>
+    </div>
+    
+    <!-- Pregunta 3 -->
+    <p>3. ¿Qué función de Excel concatena dos o más cadenas de texto?</p>
+    <div class="option">
+      <input type="radio" name="q3" value="a">a) CONCATENAR<br>
+      <input type="radio" name="q3" value="b">b) UNIR<br>
+      <input type="radio" name="q3" value="c">c) COMBINAR<br>
+      <input type="radio" name="q3" value="d">d) CONCAT<br>
+    </div>
+    
+    <!-- Pregunta 4 -->
+    <p>4. ¿Cuál de las siguientes funciones de Excel devuelve la fecha y hora actuales?</p>
+    <div class="option">
+      <input type="radio" name="q4" value="a">a) AHORA<br>
+      <input type="radio" name="q4" value="b">b) HOY<br>
+      <input type="radio" name="q4" value="c">c) FECHAYHORA<br>
+      <input type="radio" name="q4" value="d">d) ACTUAL<br>
+    </div>
+    
+    <!-- Pregunta 5 -->
+    <p>5. ¿Qué función de Excel se utiliza para buscar un valor en un rango y devolver el valor correspondiente de otra columna?</p>
+    <div class="option">
+      <input type="radio" name="q5" value="a">a) BUSCAR<br>
+      <input type="radio" name="q5" value="b">b) ENCONTRAR<br>
+      <input type="radio" name="q5" value="c">c) BUSCARV<br>
+      <input type="radio" name="q5" value="d">d) BUSCARYDEVOLVER<br>
+    </div>
+    
+    <!-- Pregunta 6 -->
+    <p>6. ¿Qué función de Excel se utiliza para encontrar el valor máximo en un rango de celdas?</p>
+    <div class="option">
+      <input type="radio" name="q6" value="a">a) MAXIMO<br>
+      <input type="radio" name="q6" value="b">b) MAX<br>
+      <input type="radio" name="q6" value="c">c) MAYOR<br>
+      <input type="radio" name="q6" value="d">d) VALORMAXIMO<br>
+    </div>
+    
+    <!-- Pregunta 7 -->
+    <p>7. ¿Cuál de las siguientes funciones de Excel permite contar la cantidad de celdas no vacías en un rango?</p>
+    <div class="option">
+      <input type="radio" name="q7" value="a">a) CONTAR<br>
+      <input type="radio" name="q7" value="b">b) CONTARBLANCO<br>
+      <input type="radio" name="q7" value="c">c) CONTAR.NO.VACIO<br>
+      <input type="radio" name="q7" value="d">d) CONTARA<br>
+    </div>
+    
+    <!-- Pregunta 8 -->
+    <p>8. ¿Qué función de Excel se utiliza para calcular el promedio de un rango de valores numéricos?</p>
+    <div class="option">
+      <input type="radio" name="q8" value="a">a) PROM<br>
+      <input type="radio" name="q8" value="b">b) PROMEDIO<br>
+      <input type="radio" name="q8" value="c">c) MEDIA<br>
+      <input type="radio" name="q8" value="d">d) VALORMEDIO<br>
+    </div>
+    
+    <!-- Pregunta 9 -->
+    <p>9. ¿Cuál de las siguientes funciones de Excel verifica si un valor cumple con una condición específica y devuelve un resultado si es verdadero y otro si es falso?</p>
+    <div class="option">
+      <input type="radio" name="q9" value="a">a) SI<br>
+      <input type="radio" name="q9" value="b">b) VERDADERO<br>
+      <input type="radio" name="q9" value="c">c) FALSO<br>
+      <input type="radio" name="q9" value="d">d) CONDICIONAL<br>
+    </div>
+    
+    <!-- Pregunta 10 -->
+    <p>10. ¿Qué función de Excel se utiliza para encontrar la posición de un valor específico en un rango de celdas?</p>
+    <div class="option">
+      <input type="radio" name="q10" value="a">a) ENCONTRAR<br>
+      <input type="radio" name="q10" value="b">b) POSICION<br>
+      <input type="radio" name="q10" value="c">c) BUSCAR<br>
+      <input type="radio" name="q10" value="d">d) BUSCARXVALOR<br>
+    </div>
+    
+    <h1>Funciones básicas de Windows:</h1>
+    
+    <!-- Pregunta 11 -->
+    <p>11. ¿Cuál es la combinación de teclas para abrir el Administrador de Tareas en Windows?</p>
+    <div class="option">
+      <input type="radio" name="q11" value="a">a) Ctrl + Shift + Esc<br>
+      <input type="radio" name="q11" value="b">b) Alt + Ctrl + Del<br>
+      <input type="radio" name="q11" value="c">c) Windows + R<br>
+      <input type="radio" name="q11" value="d">d) Windows + Esc<br>
+    </div>
+    
+    <!-- Pregunta 12 -->
+    <p>12. ¿Dónde se encuentra el Panel de Control en Windows?</p>
+    <div class="option">
+      <input type="radio" name="q12" value="a">a) En el menú Inicio<br>
+      <input type="radio" name="q12" value="b">b) En la barra de tareas<br>
+      <input type="radio" name="q12" value="c">c) En el escritorio (desktop)<br>
+      <input type="radio" name="q12" value="d">d) En la barra de notificaciones<br>
+    </div>
+    
+    <!-- Pregunta 13 -->
+    <p>13. ¿Qué función realiza el comando "Copiar" en Windows?</p>
+    <div class="option">
+      <input type="radio" name="q13" value="a">a) Mover un archivo o carpeta a otra ubicación.<br>
+      <input type="radio" name="q13" value="b">b) Eliminar un archivo o carpeta.<br>
+      <input type="radio" name="q13" value="c">c) Duplicar un archivo o carpeta en la misma ubicación.<br>
+      <input type="radio" name="q13" value="d">d) Enviar un archivo o carpeta a la Papelera de Reciclaje.<br>
+    </div>
+    
+    <!-- Pregunta 14 -->
+    <p>14. ¿Cuál de las siguientes opciones se utiliza para desinstalar programas en Windows?</p>
+    <div class="option">
+      <input type="radio" name="q14" value="a">a) Programas y Características<br>
+      <input type="radio" name="q14" value="b">b) Panel de Control<br>
+      <input type="radio" name="q14" value="c">c) Agregar o Quitar Programas<br>
+      <input type="radio" name="q14" value="d">d) Desinstalador de Programas<br>
+    </div>
+    
+    <!-- Pregunta 15 -->
+    <p>15. ¿Cuál es la combinación de teclas para cambiar entre ventanas abiertas en Windows?</p>
+    <div class="option">
+      <input type="radio" name="q15" value="a">a) Alt + Tab<br>
+      <input type="radio" name="q15" value="b">b) Windows + Tab<br>
+      <input type="radio" name="q15" value="c">c) Ctrl + Tab<br>
+      <input type="radio" name="q15" value="d">d) Shift + Tab<br>
+    </div>
+    
+    <!-- Pregunta 16 -->
+    <p>16. ¿Cuál es la combinación de teclas para cortar un elemento seleccionado en Windows?</p>
+    <div class="option">
+      <input type="radio" name="q16" value="a">a) Ctrl + C<br>
+      <input type="radio" name="q16" value="b">b) Ctrl + X<br>
+      <input type="radio" name="q16" value="c">c) Ctrl + V<br>
+      <input type="radio" name="q16" value="d">d) Ctrl + Z<br>
+    </div>
+    
+    <!-- Pregunta 17 -->
+    <p>17. ¿Cómo se abre una nueva ventana del Explorador de archivos en Windows?</p>
+    <div class="option">
+      <input type="radio" name="q17" value="a">a) Windows + E<br>
+      <input type="radio" name="q17" value="b">b) Windows + N<br>
+      <input type="radio" name="q17" value="c">c) Windows + W<br>
+      <input type="radio" name="q17" value="d">d) Windows + F<br>
+    </div>
+    
+    <!-- Pregunta 18 -->
+    <p>18. ¿Qué función realiza el comando "Pegar" en Windows?</p>
+    <div class="option">
+      <input type="radio" name="q18" value="a">a) Copiar un archivo o carpeta en otra ubicación.<br>
+      <input type="radio" name="q18" value="b">b) Eliminar un archivo o carpeta.<br>
+      <input type="radio" name="q18" value="c">c) Insertar el contenido copiado o cortado en la ubicación seleccionada.<br>
+      <input type="radio" name="q18" value="d">d) Abrir el menú contextual del elemento seleccionado.<br>
+    </div>
+    
+    <!-- Pregunta 19 -->
+    <p>19. ¿Cuál de las siguientes opciones se utiliza para cambiar la resolución de pantalla en Windows?</p>
+    <div class="option">
+      <input type="radio" name="q19" value="a">a) Configuración de pantalla<br>
+      <input type="radio" name="q19" value="b">b) Panel de Control<br>
+      <input type="radio" name="q19" value="c">c) Configuración de sistema<br>
+      <input type="radio" name="q19" value="d">d) Configuración de gráficos<br>
+    </div>
+    
+    <!-- Pregunta 20 -->
+    <p>20. ¿Cuál es la combinación de teclas para deshacer la última acción en Windows?</p>
+    <div class="option">
+      <input type="radio" name="q20" value="a">a) Ctrl + C<br>
+      <input type="radio" name="q20" value="b">b) Ctrl + X<br>
+      <input type="radio" name="q20" value="c">c) Ctrl + Z<br>
+      <input type="radio" name="q20" value="d">d) Ctrl + V<br>
+    </div>
+    
+    <h1>Macros en Excel:</h1>
+    
+    <!-- Pregunta 21 -->
+    <p>21. ¿Qué es una macro en Excel?</p>
+    <div class="option">
+      <input type="radio" name="q21" value="a">a) Un gráfico dinámico.<br>
+      <input type="radio" name="q21" value="b">b) Una función personalizada.<br>
+      <input type="radio" name="q21" value="c">c) Un conjunto de comandos grabados que se pueden reproducir automáticamente.<br>
+      <input type="radio" name="q21" value="d">d) Un complemento de terceros.<br>
+    </div>
+    
+    <!-- Pregunta 22 -->
+    <p>22. ¿Dónde se almacenan las macros en Excel?</p>
+    <div class="option">
+      <input type="radio" name="q22" value="a">a) En un archivo con extensión .macro<br>
+      <input type="radio" name="q22" value="b">b) En un archivo con extensión .xlsm<br>
+      <input type="radio" name="q22" value="c">c) En un archivo con extensión .exe<br>
+      <input type="radio" name="q22" value="d">d) En un archivo con extensión .mac<br>
+    </div>
+    
+    <!-- Pregunta 23 -->
+    <p>23. ¿Cuál es la pestaña de Excel donde puedes ver, crear y editar macros?</p>
+    <div class="option">
+      <input type="radio" name="q23" value="a">a) Datos<br>
+      <input type="radio" name="q23" value="b">b) Revisar<br>
+      <input type="radio" name="q23" value="c">c) Desarrollador<br>
+      <input type="radio" name="q23" value="d">d) Inicio<br>
+    </div>
+    
+    <!-- Pregunta 24 -->
+    <p>24. ¿Cómo se inicia el Editor de Visual Basic en Excel?</p>
+    <div class="option">
+      <input type="radio" name="q24" value="a">a) Alt + F11<br>
+      <input type="radio" name="q24" value="b">b) Ctrl + V<br>
+      <input type="radio" name="q24" value="c">c) Windows + R y escribir "VB"<br>
+      <input type="radio" name="q24" value="d">d) En la pestaña Desarrollador, hacer clic en "Crear Macro"<br>
+    </div>
+    
+    <!-- Pregunta 25 -->
+    <p>25. ¿Qué opción debes habilitar para que Excel ejecute macros al abrir un libro?</p>
+    <div class="option">
+      <input type="radio" name="q25" value="a">a) "Ejecutar macros al inicio"<br>
+      <input type="radio" name="q25" value="b">b) "Habilitar contenido"<br>
+      <input type="radio" name="q25" value="c">c) "Permitir macros externas"<br>
+      <input type="radio" name="q25" value="d">d) "Habilitar todas las macros"<br>
+    </div>
+    
+    <!-- Pregunta 26 -->
+    <p>26. ¿Qué lenguaje de programación se utiliza para crear macros en Excel?</p>
+    <div class="option">
+      <input type="radio" name="q26" value="a">a) Python<br>
+      <input type="radio" name="q26" value="b">b) C++<br>
+      <input type="radio" name="q26" value="c">c) Visual Basic for Applications (VBA)<br>
+      <input type="radio" name="q26" value="d">d) Java<br>
+    </div>
+    
+    <!-- Pregunta 27 -->
+    <p>27. ¿Qué comando de VBA se utiliza para repetir una acción un número específico de veces?</p>
+    <div class="option">
+      <input type="radio" name="q27" value="a">a) LOOP<br>
+      <input type="radio" name="q27" value="b">b) REPEAT<br>
+      <input type="radio" name="q27" value="c">c) FOR<br>
+      <input type="radio" name="q27" value="d">d) WHILE<br>
+    </div>
+    
+    <!-- Pregunta 28 -->
+    <p>28. ¿Qué función de VBA se utiliza para mostrar un mensaje emergente con botones de "Aceptar" y "Cancelar"?</p>
+    <div class="option">
+      <input type="radio" name="q28" value="a">a) MsgBox<br>
+      <input type="radio" name="q28" value="b">b) ShowMessage<br>
+      <input type="radio" name="q28" value="c">c) Popup<br>
+      <input type="radio" name="q28" value="d">d) DisplayAlert<br>
+    </div>
+    
+    <!-- Pregunta 29 -->
+    <p>29. ¿Cuál es la extensión de archivo utilizada para los libros de Excel que contienen macros?</p>
+    <div class="option">
+      <input type="radio" name="q29" value="a">a) .xlsx<br>
+      <input type="radio" name="q29" value="b">b) .xlsm<br>
+      <input type="radio" name="q29" value="c">c) .xlsb<br>
+      <input type="radio" name="q29" value="d">d) .xltx<br>
+    </div>
+           
+            <!-- Pregunta 30 -->
+            <div class="question">
+          
+            </div>
+            <div class="option">
+              <input type="radio" name="q26" value="a"> 
+            </div>
+            <div class="option">
+              <input type="radio" name="q26" value="b">
+            </div>
+            <div class="option">
+              <input type="radio" name="q26" value="c"> 
+        
+
+    
+  </form>
+
+        <!-- Agregar más preguntas si es necesario -->
+    
+        <button type="submit">Finalizar examen</button>
+        <div id="password-form">
+          
+       
+    
+        <button type="button" id="reset-button" style="display: none;" onclick="resetExam()">Restablecer Examen</button>
+    
+    </form>
+    
+    <body>
+        
+    
+     
+        <!-- Botón para restablecer el examen -->
+        <button type="button" id="reset-button" style="display: none;" onclick="resetExam()">Restablecer Examen</button>
+        <script>
+            
+            const examForm = document.getElementById("exam-form");
+            const passwordForm = document.getElementById("password-form");
+            const passwordInput = document.getElementById("password-input");
+            const resetButton = document.getElementById("reset-button");
+            let examCompleted = false;
+    
+            // Función para verificar la contraseña y mostrar el formulario del examen
+            function checkPassword() {
+                const password = passwordInput.value.trim();
+    
+                // Verificar la contraseña (puedes cambiar "contraseña123" por la contraseña deseada)
+                if (password === "contraseña123") {
+                    passwordForm.style.display = "none";
+                    examForm.style.display = "block";
+                    localStorage.setItem("formPassword", true);
+                    resetButton.style.display = "block";
+                } else {
+                    alert("Contraseña incorrecta. Inténtalo nuevamente.");
+                }
+            }
+    
+            // Mostrar el formulario de contraseña si aún no se ha ingresado la contraseña
+            if (!localStorage.getItem("formPassword")) {
+                passwordForm.style.display = "block";
+            }
+    
+            // Redirigir a contraseña.html si se abandona el examen o se cambia de página
+            window.addEventListener("beforeunload", (event) => {
+                if (!examCompleted) {
+                    localStorage.setItem("formAbandoned", true);
+                    event.preventDefault();
+                    event.returnValue = "¿Estás seguro de abandonar el examen? Los progresos se perderán.";
+                }
+            });
+    
+            // Detectar cambios de visibilidad en la página
+            document.addEventListener("visibilitychange", () => {
+                if (document.visibilityState === "hidden") {
+                    examCompleted = true;
+                    localStorage.setItem("formAbandoned", true);
+                    window.location.href = "contrasena.html";
+                }
+            });
+    
+            let score = 0.5;
+        const totalQuestions = 26;
+
+        // Función para verificar la contraseña y mostrar el formulario del examen
+        function checkPassword() {
+            const password = document.getElementById("password-input").value.trim();
+
+            // Verificar la contraseña (puedes cambiar "contraseña123" por la contraseña deseada)
+            if (password === "contraseña123") {
+                document.getElementById("password-form").style.display = "none";
+                document.getElementById("exam-form").style.display = "block";
+                document.getElementById("reset-button").style.display = "block";
+            } else {
+                alert("Contraseña incorrecta. Inténtalo nuevamente.");
+            }
+        }
+
+        // Función para validar las respuestas y calcular la puntuación
+        function validateAnswers() {
+            const answers = [
+                // Agregar aquí las respuestas correctas de cada pregunta
+               // Preguntas sobre Macros en Excel
+               "c", // Pregunta 1
+                "d", // Pregunta 2
+                "a", // Pregunta 3
+                "b", // Pregunta 4
+                "b", // Pregunta 5
+                "c", // Pregunta 6
+                "c", // Pregunta 7
+                "a", // Pregunta 8
+                "c", // Pregunta 9
+                "c", // Pregunta 10
+
+                // Preguntas sobre Fórmulas básicas de Excel
+                "a", // Pregunta 11
+                "b", // Pregunta 12
+                "c", // Pregunta 13
+                "b", // Pregunta 14
+                "a", // Pregunta 15
+
+                // Preguntas sobre Funciones básicas de Windows
+                "b", // Pregunta 16
+                "a", // Pregunta 17
+                "c", // Pregunta 18
+                "b", // Pregunta 19
+                "a", // Pregunta 20
+                "a", // Pregunta 21
+                "d", // Pregunta 22
+                "c", // Pregunta 23
+                "a", // Pregunta 24
+                "b", // Pregunta 25
+                "c", // Pregunta 26
+                "a", // Pregunta 27
+                "b", // Pregunta 28
+                "b", // Pregunta 29
+                "a"  // Pregunta 30
+            ];
+
+            const formElements = document.getElementById("exam-form").elements;
+
+            for (let i = 0; i < totalQuestions; i++) {
+                const questionName = `q${i + 1}`;
+                const selectedAnswer = formElements[questionName].value;
+
+                if (selectedAnswer === answers[i]) {
+                    score += 0.5; // Sumar 0.5 puntos por respuesta correcta
+                }
+            }
+
+            // Redondear la puntuación a 2 decimales
+            score = Math.round(score * 100) / 100;
+        }
+
+// Función para mostrar la puntuación final y redirigir a contraseña_2.html
+function showFinalScore() {
+alert(`Tu puntuación final es: ${score}`);
+localStorage.setItem("formCompleted", true);
+localStorage.removeItem("formAbandoned");
+localStorage.removeItem("formPassword");
+resetButton.style.display = "block";
+window.location.href = "contraseña_2.html";
+}
+
+// Manejar el evento de envío del formulario (finalización del examen)
+examForm.addEventListener("submit", (event) => {
+event.preventDefault();
+
+// Obtener todas las respuestas seleccionadas
+// Agregar más respuestas si es necesario
+
+// Validar las respuestas y calcular la puntuación
+// Agregar más validaciones si es necesario
+validateAnswers();
+
+// Marcar el examen como completado
+examCompleted = true;
+
+// Mostrar la puntuación final y redirigir a contraseña_2.html
+showFinalScore();
+});
+
+// Función para restablecer el examen
+function resetExam() {
+localStorage.removeItem("formCompleted");
+resetButton.style.display = "none";
+examCompleted = false;
+score = 0;
+window.location.reload(); // Recargar la página para volver al estado inicial
+}
+
+// Verificar si el examen ya ha sido completado previamente y redirigir a contraseña_2.html
+if (localStorage.getItem("formCompleted")) {
+showFinalScore();
+}
+
+// Mostrar el botón para restablecer el examen si se ha completado previamente
+if (localStorage.getItem("formCompleted")) {
+resetButton.style.display = "block";
+}
+
+// Verificar si el examen ya se ha completado
+const isExamCompleted = localStorage.getItem('formCompleted') === 'true';
+const isFormLocked = localStorage.getItem('formAbandoned') === 'true';
+
+// Bloquear la página si el examen no se ha completado
+if (!isExamCompleted && isFormLocked) {
+alert('Esta página está bloqueada. Ingresa la contraseña en la página contraseña.html y completa el examen para desbloquearla.');
+window.location.href = 'contrasena.html';
+}
+
+
+</script>
+     
+    </body>
+</html>
